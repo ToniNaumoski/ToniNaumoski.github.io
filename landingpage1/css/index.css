@@ -1,0 +1,326 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans|Poiret+One);
+
+
+/*box script*/
+
+
+	*{ padding:0px; margin:0px; }
+
+
+			a{ color:#C8DCE5; }
+p {
+	text-align: center;
+	font-family: "Pontano Sans";
+}
+
+			h3{
+				font-family: "Pontano Sans";
+	color: rgb(102,153,153);
+	letter-spacing: -1px;
+	font-weight: normal;
+	margin-top: 15px;
+	margin-bottom: 40;
+	font-size: 14pt;
+	text-align: center;
+	padding-bottom: 44px;
+}
+
+body {
+	background-color: rgba(63,63,63,1);
+	background-image: url(../images/gradient_background.jpg);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+
+#header {
+	height: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	clear: both;
+	width: 1150px;	
+}
+#header #logo-header {
+	background-color: rgba(204,204,204,1);
+	float: left;
+	height: 80px;
+	width: 200px;
+}
+
+ #header #logo-header h1 {
+	color: rgba(255,255,255,1);
+	text-align: center;
+}
+#header #flag {
+	height: 45px;
+	width: 640px;
+	margin-right:34px;
+	background-image: url(../images/flag.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	float:right;
+}
+#header #flag #social-media-header {
+	list-style-type: none;
+	height: 20px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	
+}
+
+#header #flag #social-media-header li a img{
+	border-width:0; }
+#header #flag #social-media-header li a {
+	font-family: "Pontano Sans";
+	;
+	float: left;
+	margin-left: 55px;
+	font-weight: normal;
+}
+#header #flag #social-media-header li a h5 {
+	font-family: "Pontano Sans";
+	font-size: 16px;
+	color: rgb(204,204,204);
+	margin-right: -25px;
+	font-weight: bold;
+}
+
+
+
+#header #sub-menu-wrapper {
+	height: 50px;
+	width: 700px;
+	float: right;
+}
+#header #sub-menu-wrapper #sub-header-menu {
+	list-style-type: none;
+}
+#header #sub-menu-wrapper #sub-header-menu li {
+
+
+}
+#header #sub-menu-wrapper #sub-header-menu li a {
+	font-family: "Pontano Sans";
+	float: left;
+	padding-left: 35px;
+	font-size: 18px;
+	color: rgb(204,204,204);
+	margin-top: 3px;
+}
+
+#header #sub-menu-wrapper #sub-header-menu li a:hover {
+	color: rgb(255,255,255);
+		
+}
+
+
+
+#header #sub-menu-wrapper #sub-header-menu li:hover #shop_ul {
+	visibility: visible;
+}
+
+
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul {
+	list-style-type: none;
+	position: absolute;
+	height: 100px;
+	visibility: hidden;
+	padding-top: 10px;
+	width: 900px;
+	margin-top: 25px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: -100px;
+}
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul li a {
+	height: 150px;
+	width: 100px;
+	clear: both;
+	text-align: center;
+	background-color: rgba(255,255,255,1);
+	color: rgba(51,51,51,1);
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul li a:hover{
+	opacity: .8;
+	
+
+
+}
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul li {
+	position: relative;
+	float: left;
+	background-color: rgba(102,102,102,1);
+	}
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul li:hover #iphone5ul{
+	visibility: visible;
+}	
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul li #iphone5ul {
+	list-style-type: none;
+	position: absolute;
+	height: 150px;
+	width: 450px;
+	margin-top: 150px;
+	margin-left: -100px;
+	visibility: hidden;
+}
+
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul li #iphone5ul li {
+	position: relative;
+	float: left;
+	}
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul li #iphone5ul li a{
+	height: 135px;
+	width: 100px;
+	clear: both;
+	text-align: center;
+	background-color: rgba(255,255,255,1);
+	color: rgba(51,51,51,1);
+	display: block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+
+#header #sub-menu-wrapper #sub-header-menu li #shop_ul li #iphone5ul li a img {
+	border-width:0;
+}
+	
+	
+	#header #sub-menu-wrapper #sub-header-menu li #shop_ul li a img  {
+		border-width:0;	
+}
+
+#header #sub-menu-wrapper #sub-header-menu li:hover  #accessoires_ul {
+	visibility: visible;
+}
+#header #sub-menu-wrapper #sub-header-menu li #accessoires_ul{
+	list-style-type: none;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 290px;
+	visibility: hidden;
+	
+}
+#header #sub-menu-wrapper #sub-header-menu li #accessoires_ul li a {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 25px;
+	position: relative;
+	margin-left: -15px;
+	
+}
+
+#middle-content {
+	width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	height: 500px;
+}
+#middle-content h1 {
+	text-align: center;
+	color: rgb(204,204,204);
+	font-weight: normal;
+	font-family: "Pontano Sans";
+	font-style: normal;
+	font-size: 28px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#middle-content #iphoneimage {
+	height: 500px;
+	width: 900px;
+	margin-left: auto;
+	background-image: url(../images/case_big_index.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#middle-content h3 {
+	padding-right: 50px;
+	padding-left: 50px;
+	float: left;
+}
+
+
+#footer {
+	clear: both;
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: rgb(153,153,153);
+	margin-bottom: 0px;
+}
+#footer #copy-right {
+	height: 20px;
+	width: 900px;
+	clear: both;
+	text-align: center;
+}
+#footer #copy-right h6 {
+	font-size: 14px;
+	font-weight: normal;
+	color: rgba(153,153,153,1);
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+#footer .menu-footer {
+	width: 750px;
+	margin-left: auto;
+	height: 30px;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#footer .menu-footer h5 {
+	float: left;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-weight: normal;
+	font-size: 18px;
+}
+#footer .menu-footer h5 a {
+	color: rgba(153,153,153,1)
+}
+	
+#footer .menu-footer h5 a:hover {
+	color:rgba(255,255,255,1);}
+	
+#footer .menu-footer a h4 {
+	font-family: "Pontano Sans";
+	text-align: left;
+	font-size: 24px;
+	font-weight: normal;
+	color: rgb(204,204,204);
+}
+#footer .menu-footer a h6 {
+	font-family: "Pontano Sans";
+	font-size: 16px;
+	font-weight: normal;
+	text-align: left;
+	color: rgb(153,153,153);
+}

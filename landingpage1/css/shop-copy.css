@@ -1,0 +1,289 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*box script*/
+
+
+	*{ padding:0px; margin:0px; }
+
+
+
+			a{ color:#C8DCE5; }
+p {
+	text-align: center;
+	font-family: "Pontano Sans";
+}
+
+			h3{
+	font-family: "Pontano Sans";
+	color: rgb(102,153,153);
+	font-weight: normal;
+	margin-top: 15px;
+	margin-bottom: 40;
+	font-size: 14pt;
+	text-align: center;
+	padding-bottom: 44px;
+}
+
+#main-content h1 {
+	font-family: "Pontano Sans";
+	color: rgb(255,255,255);
+	text-align: center;
+	width: 800px;
+	font-size: 30px;
+	font-weight: 500;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+			
+			.boxgrid{
+	width: 250px;
+	height: 300px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	border: medium solid rgba(0,0,0,1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+			}
+			
+				.boxgrid-no-borders{
+	width: 260px;
+	height: 360px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+			}
+				.boxgrid img{ 
+					position: absolute; 
+					top: 0; 
+					left: 0; 
+					border: 0; 
+				}
+				.boxgrid p{ 
+				font-family: "Pontano Sans";
+					padding: 0 10px; 
+					color:#afafaf; 
+					font-weight:bold; 
+					font:10pt;
+				}
+				
+			.boxcaption{
+	float: left;
+	position: absolute;
+	height: 360px;
+	width: 100%;
+	opacity: .8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				/* For IE 5-7 */
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	margin-top: 250px;
+	background-color: #000;
+ 			}
+ 				.captionfull .boxcaption {
+ 					top: 260;
+ 					left: 0;
+ 				}
+ 				.caption .boxcaption {
+ 					top: 220;
+ 					left: 0;
+ 				}
+
+
+
+/*end of  box script*/
+
+
+
+
+* {
+	
+	padding: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	}
+
+body {
+	background-repeat: repeat-x;
+	background-color: #333333;
+	background-attachment: scroll;
+	background-position: center top;
+}
+
+#header {
+	height: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	clear: both;
+	width: 800px;
+	
+}
+#header #flag {
+	height: 45px;
+	width: 700px;
+	background-image: url(../images/flag.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header #flag #social-media-header {
+	list-style-type: none;
+	height: 20px;
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+}
+#header #flag #social-media-header li a {
+	font-family: "Pontano Sans";
+	;
+	float: left;
+	margin-left: 55px;
+	font-weight: normal;
+}
+#header #flag #social-media-header li a h5 {
+	font-family: "Pontano Sans";
+	font-size: 16px;
+	color: rgb(204,204,204);
+	margin-right: -25px;
+	font-weight: bold;
+}
+
+
+
+#header #sub-menu-wrapper {
+	height: 50px;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header #sub-menu-wrapper #sub-header-menu {
+	list-style-type: none;
+}
+#header #sub-menu-wrapper #sub-header-menu li {
+
+
+}
+#header #sub-menu-wrapper #sub-header-menu li a {
+	font-family: "Pontano Sans";
+	float: left;
+	padding-left: 88px;
+	font-size: 18px;
+	color: rgb(204,204,204);
+	margin-top: 3px;
+	
+}
+
+#header #sub-menu-wrapper #sub-header-menu li a:hover {
+	color: rgb(255,255,255);
+		
+}
+
+
+
+
+
+
+
+#footer {
+	clear: both;
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: rgb(153,153,153);
+	margin-bottom: 0px;
+}
+#footer #copy-right {
+	height: 20px;
+	width: 900px;
+	clear: both;
+	text-align: center;
+}
+#footer #copy-right h6 {
+	font-size: 14px;
+	font-weight: normal;
+	color: rgba(153,153,153,1);
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+#footer .menu-footer {
+	width: 750px;
+	margin-left: auto;
+	height: 30px;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#footer .menu-footer h5 {
+	float: left;
+	margin-right: 55px;
+	margin-left: 55px;
+	font-weight: normal;
+	color: rgba(204,204,204,1);
+}
+
+
+#footer .menu-footer a h4 {
+	font-family: "Pontano Sans";
+	text-align: left;
+	font-size: 24px;
+	font-weight: normal;
+	color: rgb(204,204,204);
+}
+#footer .menu-footer a h6 {
+	font-family: "Pontano Sans";
+	font-size: 16px;
+	font-weight: normal;
+	text-align: left;
+	color: rgb(153,153,153);
+}
