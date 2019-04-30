@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url(http://fonts.googleapis.com/css?family=Pontano+Sans|Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans|Poiret+One);
 
 
 /*box script*/
@@ -100,10 +100,7 @@ body {
 #header #sub-menu-wrapper #sub-header-menu {
 	list-style-type: none;
 }
-#header #sub-menu-wrapper #sub-header-menu li {
 
-
-}
 #header #sub-menu-wrapper #sub-header-menu li a {
 	font-family: "Pontano Sans";
 	float: left;
