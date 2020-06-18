@@ -1,0 +1,39 @@
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    #page-wrapper {
+        display: grid;
+        grid-template-areas:
+        'about-section name-section projects-section' 
+        'job-history-section name-section  skills-section';
+        grid-template-columns: 1fr 120px 1fr;
+        grid-row-gap: 10px;
+    
+    }
+
+    #name-surname-section {
+        width: 20px;
+        left: calc(50% - 14px);
+        height: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        display: grid;
+        position: fixed;
+    }
+
+
+    
+    #name-surname-section .text {
+        font-size: 2.8rem;
+        word-break: break-all;
+        width: 10px;
+        font-size: 3rem;
+        align-self: center;
+    }
+
+        /* about section */
+        #about {
+            margin-top: 0;
+        }
+
+ }

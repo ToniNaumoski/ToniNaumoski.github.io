@@ -1,0 +1,19 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 1px) {
+
+
+    /* grid layout for small devices*/
+    #page-wrapper {
+        display: grid;
+        grid-template-areas:
+        'name-section'
+        'about-section'
+        'projects-section'
+        'skills-section'
+        'job-history-section';
+        grid-template-columns: 1fr;
+        padding: 0 20px 20px 20px;
+        grid-row-gap: 10px;
+    }
+
+  }
