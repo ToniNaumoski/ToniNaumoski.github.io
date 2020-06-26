@@ -16,8 +16,17 @@ var currentYOffset;
 var pageDirection;
 var windowDeltaY;
 var projectAnimation;
+var touchDirectionPrev;
+var touchDirectionFinish;
+
+// touch variables
+var initialY = null;
+
 window.addEventListener('load', (event) => {
 
+    touchDirectionFinish = true;
+    // touchDirectionDefault value
+    touchDirectionPrev = 0;
     // project animation set to false
     projectAnimation = false;
     // set window Y Offset
@@ -457,27 +466,6 @@ window.addEventListener('load', (event) => {
             }
 
 
-            //  window.scrollBy(0, 200)
-            // // this script is element top from top of the page
-            // var top = document.querySelector('#projects').offsetTop - document.querySelector('#projects').scrollTop + document.querySelector('#projects').clientTop;
-            // // if animation element is in view port 
-            // if ((window.scrollY > top || window.scrollY == top) && window.scrollY < top + document.querySelector('#projects').offsetHeight) {
-
-            //     // wait for the next scroll is triger that will add logic for page to go to next section or stick at animation
-            //     // if (!waitForTheNextScroll) {
-            //     //     scrollTop()
-            //     // }
-            //     // if prev animation is finised and wait for next section is false execute animate elements function
-            //     if (finishedAnimation) {
-            //         projects();
-            //     }
-            // }
-
-            // window.pageYOffset = currentYOffset;
-            // set prev scroll value
-            // prevYOffset = window.scrollY;
-            // skill bar
-
             // skills animate
             var skills = document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop;
             if ((window.scrollY > skills || window.scrollY == skills)) {
@@ -489,6 +477,121 @@ window.addEventListener('load', (event) => {
             }
         },
         { passive: true })
+
+
+        // touchmove functions
+
+            // function that will return page scroll direction up or down;
+    // function touchDirecton(touchMove) {
+    //     // if prev value is bigger than window.pageYOffset page is scrolled up
+    //     touchDirectionFinish = false;
+    //     if (touchMove < touchDirectionPrev) {
+    //         scrollDirectonVar = 'up';
+    //         setTimeout(() => {
+    //             touchDirectionFinish = true;
+    //         }, 1000);
+    //         return 'up';
+
+    //         // else page is scroll down remember if animation is in place page will not move;
+    //     } else if(touchMove > touchDirectionPrev) {
+    //         scrollDirectonVar = 'down';
+    //         setTimeout(() => {
+    //             touchDirectionFinish = true;
+    //         }, 1000);
+    //         return 'down';
+    //     }
+    // }
+
+            // on page touchmove event
+    // document.addEventListener(
+    //     'touchmove',
+    //     (event) => {
+    //         if(touchDirectionFinish) {
+    //             console.log(touchDirecton(event.touches[0].clientY))
+    //         }
+    //         touchDirectionPrev = event.touches[0].clientY;
+    //     });
+
+    document.addEventListener("touchstart", startTouch, false);
+    document.addEventListener("touchmove", moveTouch, false);
+
+    function startTouch(e) {
+        initialY = e.touches[0].clientY;
+      }
+
+      function moveTouch(e) {
+
+        if (initialY === null) {
+          return;
+        }
+
+        var currentY = e.touches[0].clientY;
+        var diffY = initialY - currentY;
+
+          // sliding vertically
+          if (diffY > 0) {
+            // swiped up
+         scrollDirectonVar = 'up';
+
+            console.log("swiped up");
+            console.log(diffY);
+          } else {
+            // swiped down
+            scrollDirectonVar = 'down';
+            console.log("swiped down");
+            console.log(diffY);
+          }  
+        
+        initialY = null;
+
+        if (prevYOffset < 0) {
+            prevYOffset = 0;
+        }
+        if (prevYOffset > document.body.scrollHeight - document.documentElement.clientHeight) {
+            prevYOffset = document.body.scrollHeight - document.documentElement.clientHeight;
+        }
+
+        var top = document.querySelector('#projects').offsetTop - document.querySelector('#projects').scrollTop + document.querySelector('#projects').clientTop;
+
+        if ((window.scrollY > top || window.scrollY == top) && window.scrollY < top + document.querySelector('#projects').offsetHeight || projectAnimation == true) {
+            projectAnimation = true;
+            window.scroll({
+                top: top,
+                behavior: 'smooth'
+            });
+            // wait for the next scroll is triger that will add logic for page to go to next section or stick at animation
+            // if (!waitForTheNextScroll) {
+            //     scrollTop()
+            // }
+            // if prev animation is finised and wait for next section is false execute animate elements function
+            if (finishedAnimation) {
+                projects();
+            }
+        } else if (scrollDirectonVar == 'down') {
+            window.scroll({
+                top: prevYOffset - 200,
+                behavior: 'smooth'
+            });
+            prevYOffset = prevYOffset - 200;
+        } else {
+            window.scroll({
+                top: prevYOffset + 200,
+                behavior: 'smooth'
+            });
+            prevYOffset = prevYOffset + 200;
+        }
+
+            // skills animate
+            var skills = document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop;
+            if ((window.scrollY > skills || window.scrollY == skills)) {
+                skillAnimateFunction('add');
+            }
+
+            if (window.scrollY < skills) {
+                skillAnimateFunction('remove');
+            }        
+      }      
+
 });
 
 
