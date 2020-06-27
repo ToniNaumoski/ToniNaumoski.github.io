@@ -16,4 +16,8 @@
         grid-row-gap: 10px;
     }
 
+    #about, #skills {
+        min-height: 100vh;
+    }
+
   }

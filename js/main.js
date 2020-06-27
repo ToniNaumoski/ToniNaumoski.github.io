@@ -71,79 +71,6 @@ window.addEventListener('load', (event) => {
             // if mobile and tablet scroll in up and down dirrection
             if (window.innerWidth < 992) {
                 if (scrollDirectonVar == 'up') {
-                    // if page direction is down
-                    projectNumber--;
-                    // if project number or lenged is at last position scroll top to next section
-                    if (projectNumber < 0) {
-
-                        waitForTheNextScroll = true;
-                        projectAnimation = false;
-                        // remove prev animation add next animation
-
-                        // remove add class from the prev element
-                        projecImage[projectNumber + 1].classList.remove("project-image-animate");
-                        projectTitle[projectNumber + 1].classList.remove("project-title-animate");
-                        projecDescription[projectNumber + 1].classList.remove("project-description-animate");
-                        projecImage[projectNumber + 1].classList.add("project-image-animate-hide");
-                        projectTitle[projectNumber + 1].classList.add("project-title-animate-hide");
-                        projecDescription[projectNumber + 1].classList.add("project-description-animate-hide");
-                        // wait for animation to finish
-                        // wait for animation to finish
-                        scrollTopMobile()
-                        setTimeout(() => {
-                            // remove prev animation from view porn and back to hidden state
-                            projecImage[projectNumber + 1].classList.remove("project-image-animate-hide");
-                            projectTitle[projectNumber + 1].classList.remove("project-title-animate-hide");
-                            projecDescription[projectNumber + 1].classList.remove("project-description-animate-hide");
-                            // add animation for the current element
-
-                            // projecImage[projectNumber].classList.add("project-image-animate");
-                            // projectTitle[projectNumber].classList.add("project-title-animate");
-                            // projecDescription[projectNumber].classList.add("project-description-animate");
-                            projectNumber = null;
-                            // after animation is finised set animation finished to true
-                            // setTimeout(() => {
-                            //     // finishedAnimation = true;
-                            //     projectNumber = null;
-                            // }, 2000);
-
-                        }, 1400);
-
-
-
-
-
-
-                    } else {
-
-                        // remove add class from the prev element
-                        projecImage[projectNumber + 1].classList.remove("project-image-animate");
-                        projectTitle[projectNumber + 1].classList.remove("project-title-animate");
-                        projecDescription[projectNumber + 1].classList.remove("project-description-animate");
-                        // add class for prev element to fade on top
-                        projecImage[projectNumber + 1].classList.add("project-image-animate-hide");
-                        projectTitle[projectNumber + 1].classList.add("project-title-animate-hide");
-                        projecDescription[projectNumber + 1].classList.add("project-description-animate-hide");
-
-
-
-                        // wait for animation to finish
-                        setTimeout(() => {
-                            // remove prev animation from view porn and back to hidden state
-                            projecImage[projectNumber + 1].classList.remove("project-image-animate-hide");
-                            projectTitle[projectNumber + 1].classList.remove("project-title-animate-hide");
-                            projecDescription[projectNumber + 1].classList.remove("project-description-animate-hide");
-                            // add animation for the current element
-                            projecImage[projectNumber].classList.add("project-image-animate");
-                            projectTitle[projectNumber].classList.add("project-title-animate");
-                            projecDescription[projectNumber].classList.add("project-description-animate");
-                            // after animation is finised set animation finished to true
-                            setTimeout(() => {
-                                finishedAnimation = true;
-                            }, 2000);
-                        }, 1400);
-                    }
-                } else if (scrollDirectonVar == 'down') {
                     // page is scroll down
                     projectNumber++;
                     // if project number or lenged is at last position scroll top to next section
@@ -206,6 +133,80 @@ window.addEventListener('load', (event) => {
                             projecImage[projectNumber - 1].classList.remove("project-image-animate-hide");
                             projectTitle[projectNumber - 1].classList.remove("project-title-animate-hide");
                             projecDescription[projectNumber - 1].classList.remove("project-description-animate-hide");
+                            // add animation for the current element
+                            projecImage[projectNumber].classList.add("project-image-animate");
+                            projectTitle[projectNumber].classList.add("project-title-animate");
+                            projecDescription[projectNumber].classList.add("project-description-animate");
+                            // after animation is finised set animation finished to true
+                            setTimeout(() => {
+                                finishedAnimation = true;
+                            }, 2000);
+                        }, 1400);
+                    }                    
+
+                } else if (scrollDirectonVar == 'down') {
+                    // if page direction is down
+                    projectNumber--;
+                    // if project number or lenged is at last position scroll top to next section
+                    if (projectNumber < 0) {
+
+                        waitForTheNextScroll = true;
+                        projectAnimation = false;
+                        // remove prev animation add next animation
+
+                        // remove add class from the prev element
+                        projecImage[projectNumber + 1].classList.remove("project-image-animate");
+                        projectTitle[projectNumber + 1].classList.remove("project-title-animate");
+                        projecDescription[projectNumber + 1].classList.remove("project-description-animate");
+                        projecImage[projectNumber + 1].classList.add("project-image-animate-hide");
+                        projectTitle[projectNumber + 1].classList.add("project-title-animate-hide");
+                        projecDescription[projectNumber + 1].classList.add("project-description-animate-hide");
+                        // wait for animation to finish
+                        // wait for animation to finish
+                        scrollTopMobile()
+                        setTimeout(() => {
+                            // remove prev animation from view porn and back to hidden state
+                            projecImage[projectNumber + 1].classList.remove("project-image-animate-hide");
+                            projectTitle[projectNumber + 1].classList.remove("project-title-animate-hide");
+                            projecDescription[projectNumber + 1].classList.remove("project-description-animate-hide");
+                            // add animation for the current element
+
+                            // projecImage[projectNumber].classList.add("project-image-animate");
+                            // projectTitle[projectNumber].classList.add("project-title-animate");
+                            // projecDescription[projectNumber].classList.add("project-description-animate");
+                            projectNumber = null;
+                            // after animation is finised set animation finished to true
+                            // setTimeout(() => {
+                            //     // finishedAnimation = true;
+                            //     projectNumber = null;
+                            // }, 2000);
+
+                        }, 1400);
+
+
+
+
+
+
+                    } else {
+
+                        // remove add class from the prev element
+                        projecImage[projectNumber + 1].classList.remove("project-image-animate");
+                        projectTitle[projectNumber + 1].classList.remove("project-title-animate");
+                        projecDescription[projectNumber + 1].classList.remove("project-description-animate");
+                        // add class for prev element to fade on top
+                        projecImage[projectNumber + 1].classList.add("project-image-animate-hide");
+                        projectTitle[projectNumber + 1].classList.add("project-title-animate-hide");
+                        projecDescription[projectNumber + 1].classList.add("project-description-animate-hide");
+
+
+
+                        // wait for animation to finish
+                        setTimeout(() => {
+                            // remove prev animation from view porn and back to hidden state
+                            projecImage[projectNumber + 1].classList.remove("project-image-animate-hide");
+                            projectTitle[projectNumber + 1].classList.remove("project-title-animate-hide");
+                            projecDescription[projectNumber + 1].classList.remove("project-description-animate-hide");
                             // add animation for the current element
                             projecImage[projectNumber].classList.add("project-image-animate");
                             projectTitle[projectNumber].classList.add("project-title-animate");
@@ -308,19 +309,19 @@ window.addEventListener('load', (event) => {
     // function for stop scroll top 
     function scrollTopMobile() {
         if (scrollDirectonVar == 'up') {
-            window.scrollTo(0, document.querySelector('#about').offsetTop - document.querySelector('#about').scrollTop + document.querySelector('#about').clientTop)
+            window.scrollTo(0, document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop)
             //  window.scrollTo({top:document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop,  behavior: 'smooth',})
 
-            prevYOffset = document.querySelector('#about').offsetTop - document.querySelector('#about').scrollTop + document.querySelector('#about').clientTop;
+            prevYOffset = document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop;
             setTimeout(() => {
                 // waitForTheNextScroll = false;
                 finishedAnimation = true;
             }, 2000);
         } else if (scrollDirectonVar == 'down') {
-            window.scrollTo(0, document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop)
+            window.scrollTo(0, document.querySelector('#about').offsetTop - document.querySelector('#about').scrollTop + document.querySelector('#about').clientTop)
             //  window.scrollTo({top:document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop,  behavior: 'smooth',})
-
-            prevYOffset = document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop;
+            
+            prevYOffset = document.querySelector('#about').offsetTop - document.querySelector('#about').scrollTop + document.querySelector('#about').clientTop;
             setTimeout(() => {
                 // waitForTheNextScroll = false;
                 finishedAnimation = true;
@@ -569,16 +570,16 @@ window.addEventListener('load', (event) => {
             }
         } else if (scrollDirectonVar == 'down') {
             window.scroll({
-                top: prevYOffset - 200,
+                top: prevYOffset - 500,
                 behavior: 'smooth'
             });
-            prevYOffset = prevYOffset - 200;
+            prevYOffset = prevYOffset - 500;
         } else {
             window.scroll({
-                top: prevYOffset + 200,
+                top: prevYOffset + 500,
                 behavior: 'smooth'
             });
-            prevYOffset = prevYOffset + 200;
+            prevYOffset = prevYOffset + 500;
         }
 
             // skills animate

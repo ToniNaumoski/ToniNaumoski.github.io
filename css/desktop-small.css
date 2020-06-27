@@ -36,4 +36,8 @@
             margin-top: 0;
         }
 
+        #about, #skills {
+            min-height: auto;
+        }
+
  }
