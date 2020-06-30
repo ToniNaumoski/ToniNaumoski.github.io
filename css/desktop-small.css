@@ -40,4 +40,8 @@
             min-height: auto;
         }
 
+        .project-article {
+            justify-content: flex-start;
+        }
+
  }

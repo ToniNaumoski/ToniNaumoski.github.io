@@ -92,16 +92,20 @@ h3 {
   position: relative;
 }
 
+.project-article {
+  display: flex;
+}
+
 .project-title {
   font-family: Abril Fatface;
   font-style: normal;
   font-weight: normal;
-  font-size: 150px;
+  font-size: 60px;
   /* line-height: 239px; */
   /* display: flex; */
   /* align-items: center; */
   text-align: center;
-  filter: blur(4px);
+  filter: blur(2px);
   position: absolute;
   top: 120vh;
   margin: 0;
@@ -111,7 +115,8 @@ h3 {
 
 
 .project-image {
-  max-width: 450px;
+  max-height: 250px;
+  max-width: 410px;
   border-radius: 10px;
   border: 2px solid #6f3be1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -123,18 +128,15 @@ h3 {
   font-family: Adobe Gothic Std;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 96px;
+  font-size: 28px;
+  line-height: 33px;
   display: flex;
-  align-items: center;
-  text-align: center;
   color: #000000;
-  filter: blur(2px);
+  filter: blur(1px);
   position: absolute;
   top: 120vh;
+  flex-direction: column;
 }
-
-
 
 #job-history { grid-area: job-history-section; }
 
@@ -240,11 +242,11 @@ h3 {
 }
 
 @keyframes project-title-animate {
-  100% { top:10vh;}
+  100% { top:15vh;}
 }
 
 @keyframes project-title-animate-hide {
-  0% {top:10vh;}
+  0% {top:15vh;}
   100% { top:-150vh;}
 }
 
@@ -262,11 +264,11 @@ h3 {
 }
 
 @keyframes project-image-animate {
-  100% { top:40vh;}
+  100% { top:30vh;}
 }
 
 @keyframes project-image-animate-hide {
-  0% { top:40vh;}
+  0% { top:30vh;}
   100% { top:-150vh;}
 }
 
@@ -283,11 +285,11 @@ h3 {
 }
 
 @keyframes project-description-animate {
-  100% { top:65vh;}
+  100% { top:73vh;}
 }
 
 @keyframes project-description-animate-hide {
-  0% { top:65vh;}
+  0% { top:73vh;}
   100% { top:-150vh;}
 }
 
