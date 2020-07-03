@@ -209,7 +209,7 @@ h3 {
 }
 
 #hire-me-content-wrapper {
-  margin-top: -200px;
+  margin-top: -500px;
 }
 
 
@@ -226,13 +226,13 @@ animation-name: hire-me-content-show;
   }
 
 @keyframes hire-me-content-show {
-  0% { margin-top:-200px;}
+  0% { margin-top:-500px;}
   100% { margin-top:10px;}
 }
 
 @keyframes hire-me-content-hide {
   0% { margin-top:10px;}
-  100% { margin-top:-200px;}
+  100% { margin-top:-500px;}
 }
 
 
