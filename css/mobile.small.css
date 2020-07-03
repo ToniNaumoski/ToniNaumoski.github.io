@@ -9,8 +9,8 @@
         'name-section'
         'about-section'
         'projects-section'
-        'skills-section'
-        'job-history-section';
+        'job-history-section' 
+        'skills-section';
         grid-template-columns: 1fr;
         padding: 0 20px 20px 20px;
         grid-row-gap: 10px;
@@ -24,5 +24,8 @@
         justify-content: center;
     }
     
-
+    /* scroll svg pointer*/
+    .scroll-svg-pointer {
+        display: none;
+    }
   }

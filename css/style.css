@@ -42,7 +42,6 @@ h3 {
   color: var(--main-secondary-color);
 }
 
-
 /* title of all sections */
 .section-title {
   background: var(--primary-text-gradiant);
@@ -67,7 +66,7 @@ h3 {
 /* sticky article */
 .sticky-article {
   position: sticky;
-  top: 50px;
+  top: 60px;
 }
 
 
@@ -183,6 +182,61 @@ h3 {
   max-width: 65%;
   width: 0;
 }
+
+.hire-me-btn {
+  background-color: transparent;
+  border: 10px solid#2F08D7;
+  font-size: 4rem;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 900;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 50px;
+
+}
+
+#hire-me-content-wrapper h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.linked-in-span {
+  /* color: #0077b5; */
+  color:#a9e1ff;
+}
+
+#hire-me-content {
+  overflow: hidden;
+}
+
+#hire-me-content-wrapper {
+  margin-top: -200px;
+}
+
+
+#hire-me-content-wrapper.show {
+animation-name: hire-me-content-show;
+ animation-fill-mode: forwards;
+ animation-duration: 1s;
+}
+
+#hire-me-content-wrapper.hide {
+  animation-name: hire-me-content-hide;
+   animation-fill-mode: forwards;
+   animation-duration: 1s;
+  }
+
+@keyframes hire-me-content-show {
+  0% { margin-top:-200px;}
+  100% { margin-top:10px;}
+}
+
+@keyframes hire-me-content-hide {
+  0% { margin-top:10px;}
+  100% { margin-top:-200px;}
+}
+
+
+
 
 /* tolltip */
 .tooltip {

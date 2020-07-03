@@ -22,8 +22,16 @@ var touchDirectionFinish;
 // touch variables
 var initialY = null;
 
-window.addEventListener('load', (event) => {
+var hireMeWrapper;
 
+function hireMeContnetToggle() {
+    hireMeWrapper.classList.toggle("show");
+    hireMeWrapper.classList.toggle("hide");
+  }
+
+window.addEventListener('load', (event) => {
+    hireMeWrapper = document.getElementById("hire-me-content-wrapper")
+    hireMeWrapper.classList.add("hide");
     touchDirectionFinish = true;
     // touchDirectionDefault value
     touchDirectionPrev = 0;
@@ -51,6 +59,8 @@ window.addEventListener('load', (event) => {
     projecDescription = document.querySelectorAll('.project-description');
     // define project number
     projectNumber = null;
+
+
 
     // project function used to animate projects
     function projects() {
@@ -309,10 +319,10 @@ window.addEventListener('load', (event) => {
     // function for stop scroll top 
     function scrollTopMobile() {
         if (scrollDirectonVar == 'up') {
-            window.scrollTo(0, document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop)
+            window.scrollTo(0, document.querySelector('#job-history').offsetTop - document.querySelector('#job-history').scrollTop + document.querySelector('#job-history').clientTop)
             //  window.scrollTo({top:document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop,  behavior: 'smooth',})
 
-            prevYOffset = document.querySelector('#skills').offsetTop - document.querySelector('#skills').scrollTop + document.querySelector('#skills').clientTop;
+            prevYOffset = document.querySelector('#job-history').offsetTop - document.querySelector('#job-history').scrollTop + document.querySelector('#job-history').clientTop;
             setTimeout(() => {
                 // waitForTheNextScroll = false;
                 finishedAnimation = true;
