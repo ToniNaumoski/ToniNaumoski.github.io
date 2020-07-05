@@ -1,8 +1,5 @@
 
-html {
-  /* default font size of 1 rem = 10px*/
-  font-size: 62.5%; 
-}
+
 body {
   padding: 0;
   margin: 0;
@@ -99,7 +96,7 @@ h3 {
   font-family: Abril Fatface;
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 6rem;
   /* line-height: 239px; */
   /* display: flex; */
   /* align-items: center; */
@@ -127,7 +124,7 @@ h3 {
   font-family: Adobe Gothic Std;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 33px;
   display: flex;
   color: #000000;
@@ -187,7 +184,7 @@ h3 {
   background-color: transparent;
   border: 10px solid#2F08D7;
   font-size: 4rem;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   border-radius: 10px;
   outline: none;
@@ -196,7 +193,7 @@ h3 {
 }
 
 #hire-me-content-wrapper h3 {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .linked-in-span {
@@ -250,7 +247,6 @@ animation-name: hire-me-content-show;
   right: 0;
   color: white;
   background-color: black;
-  font-size: 2rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   font-family: Roboto;
   font-style: normal;
