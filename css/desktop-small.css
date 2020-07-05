@@ -1,12 +1,11 @@
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-
   html {
     /* default font size of 1 rem = 10px*/
     font-size: 62.5%; 
   }
-  
+
     #page-wrapper {
         display: grid;
         grid-template-areas:
@@ -50,6 +49,10 @@
 
         .project-article {
             justify-content: flex-start;
+        }
+
+        .project-description {
+          line-height: 33px;
         }
 
 
