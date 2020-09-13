@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db033ee3ed974be9fc915c998bcc2995",
+    "revision": "ee82f94e04dff325b54847f93ad64343",
     "url": "/BannerAnimation/index.html"
   },
   {
-    "revision": "ce0e24dcf22d39984800",
+    "revision": "df76c083d1da9f99cad1",
     "url": "/BannerAnimation/static/css/main.a4fe1b2f.chunk.css"
   },
   {
-    "revision": "4c1752db4221083826a2",
-    "url": "/BannerAnimation/static/js/2.51a6ecf8.chunk.js"
+    "revision": "493fc61829b237f0053c",
+    "url": "/BannerAnimation/static/js/2.ebbffe2a.chunk.js"
   },
   {
-    "revision": "27f407e03dbaede5dfc8c21d5d5387fa",
-    "url": "/BannerAnimation/static/js/2.51a6ecf8.chunk.js.LICENSE.txt"
+    "revision": "89a6b555af4184298a5af61b72cf43aa",
+    "url": "/BannerAnimation/static/js/2.ebbffe2a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ce0e24dcf22d39984800",
-    "url": "/BannerAnimation/static/js/main.11a31f42.chunk.js"
+    "revision": "df76c083d1da9f99cad1",
+    "url": "/BannerAnimation/static/js/main.9a42d206.chunk.js"
   },
   {
     "revision": "9b6c00afb037c70f5f41",
     "url": "/BannerAnimation/static/js/runtime-main.c6e4942f.js"
-  },
-  {
-    "revision": "d79bf115e29c20156a132ec6d839deb5",
-    "url": "/BannerAnimation/static/media/bg-parallax-1.d79bf115.jpg"
   },
   {
     "revision": "96ac422c07d0a48a6f51ee7475c7298e",
@@ -58,9 +54,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0fdd94c1b2fa2897ec0d19054c858c07",
     "url": "/BannerAnimation/static/media/phone.0fdd94c1.svg"
-  },
-  {
-    "revision": "ba41dd99630894be2b19428573a50d26",
-    "url": "/BannerAnimation/static/media/rocky-mountain.ba41dd99.jpg"
   }
 ]);
