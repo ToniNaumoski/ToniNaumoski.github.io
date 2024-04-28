@@ -135,19 +135,16 @@ export default function HeaderComponent() {
                     <article className="about-me-text-wrapper">
                         <h3>ABOUT ME</h3>
                         <p>
-                            Hello,
+                        Hello,
                             My name is Toni Naumoski.
 
-                            I'm a web designer/front-end developer with more than 10 years of experience.
+                            I am a Senior Frontend Developer with more than 14 years of experience in the industry. 
 
-                            Mixing code and design is my passion.
+I am skilled in designing and developing complex web applications using Angular. React and Vue.
 
-                            I love to create brand websites/web applications that are very unique, responsive, and
-                            detail-oriented.
+I also like to work with Python, Django, and ChatGPT. 
 
-                            I'm skilled in designing and developing websites and web applications using Html, CSS, and
-                            JavaScript(React,
-                            Angular, Gsap). I also love working with Photoshop, Figma, and illustrator.
+High integrity, great communication, a positive attitude, and reliability are skills that best describe my personality.
                         </p>
                     </article>
                 </section>
@@ -280,77 +277,22 @@ export default function HeaderComponent() {
                     <h3 className='skill-set-title'>SKILLS</h3>
                     <div className='skill-set-skills'>
 
-                        <p>HTML5</p>
+                    <p>HTML5</p>
                         <p>CSS3</p>
                         <p>SCSS</p>
-                        <p>ANGULAR</p>
                         <p>JAVASCRIPT</p>
+                        <p>ANGULAR</p>
                         <p>REACT</p>
+                        <p>VUE</p>
                         <p>GREENSOCK ANIMATION PLATFORM</p>
+                        <p>DJANGO</p>
+                        <p>PYTHON</p>
                         <p>PHOTOSHOP</p>
                         <p>FIGMA</p>
                         <p>ILLUSTRATOR</p>
                     </div>
                 </section>
-                <section className="work-history-section">
-                    <h3 className='work-history-title'>WORK HISTORY</h3>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Frontend UI Developer / Web Designer / UI Designer </h3>
-                        <p className='work-history-article-description'>Freelance - Remote</p>
-                        <p className='work-history-article-description'>August 2020 to Present </p>
-                    </article>
 
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Frontend UI Developer / Web Designer </h3>
-                        <p className='work-history-article-description'>Optima - Skopje</p>
-                        <p className='work-history-article-description'>September 2021 to January 2022</p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Frontend UI Developer / Web Designer </h3>
-                        <p className='work-history-article-description'>Sourcico - Skopje</p>
-                        <p className='work-history-article-description'>June 2021 to September 2021</p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Frontend Developer / Web Designer </h3>
-                        <p className='work-history-article-description'>Seavus - Skopje</p>
-                        <p className='work-history-article-description'>November 2020 to May 2021 </p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Frontend Developer / Web Designer </h3>
-                        <p className='work-history-article-description'>IT Labs - Skopje </p>
-                        <p className='work-history-article-description'>January 2020 to April 2020 </p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Frontend Developer / Web Designer / UI UX Designer</h3>
-                        <p className='work-history-article-description'>SWIFT DATA LLC - Skopje </p>
-                        <p className='work-history-article-description'>July 2019 to January 2020 </p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Barracuda FX - Skopje </h3>
-                        <p className='work-history-article-description'>Frontend Developer / Web Designer</p>
-                        <p className='work-history-article-description'>January 2018 to April 2019 </p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Frontend Developer / Web Designer</h3>
-                        <p className='work-history-article-description'>Seavus - Skopje</p>
-                        <p className='work-history-article-description'>February 2016 to January 2018 </p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Frontend Developer / Web Designer</h3>
-                        <p className='work-history-article-description'>MySoft - Skopje </p>
-                        <p className='work-history-article-description'>February 2015 to January 2016</p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Web Developer</h3>
-                        <p className='work-history-article-description'>Gamut Global Operations - Skopje </p>
-                        <p className='work-history-article-description'>April 2014 to February 2015 </p>
-                    </article>
-                    <article className='work-history-article'>
-                        <h3 className='work-history-article-title'>Designer / Web Designer / Web Developer</h3>
-                        <p className='work-history-article-description'>Gamut Global Operations - Skopje </p>
-                        <p className='work-history-article-description'>April 2014 to February 2015 </p>
-                    </article>
-                </section>
                 <section className="contact-me-section">
                     <h3 className='contact-me-section-title'>CONTACT ME</h3>
                     <div className="contact-section-article-wrapper">
