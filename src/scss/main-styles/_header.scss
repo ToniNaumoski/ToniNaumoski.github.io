@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.header-text-section {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    font-size: initial;
+    margin-left: 10vw;
+    margin-top: -200px;
+}
+
+.header-text-section > h1, h2 {
+    margin:0;
+}
+
+.header-name {
+    font-family: 'Mr Dafoe', sans-serif;
+    font-size: 48px;
+}
+
+.header-discription {
+    margin-top: 10px;
+    color: #ffa500;
+}
+
+.header-image-section {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-image {
+    width: 30vw;
+    margin-right: 10vw;
+}

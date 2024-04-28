@@ -1,13 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.c113b55f.css",
-    "main.js": "/static/js/main.a5202ff9.js",
+    "main.css": "/static/css/main.9ed4b0e3.css",
+    "main.js": "/static/js/main.81dd0f86.js",
     "static/js/787.c09d15d4.chunk.js": "/static/js/787.c09d15d4.chunk.js",
     "static/media/figmaPortdolio.jpg": "/static/media/figmaPortdolio.a74d14182c03d407942e.jpg",
-    "static/media/packandmove-full-image.png": "/static/media/packandmove-full-image.36550cc7786d66b99625.png",
     "static/media/figmaPortdolio-small-img.psd": "/static/media/figmaPortdolio-small-img.5d6d1a284cd2deafcd56.psd",
     "static/media/website-design-2.jpg": "/static/media/website-design-2.e8cdb6135410390abd8d.jpg",
-    "static/media/Packmoov.jpg": "/static/media/Packmoov.f840a87dc1abf21759eb.jpg",
     "static/media/website-design-3.jpg": "/static/media/website-design-3.20533e6577ff828c6c24.jpg",
     "static/media/website-design-4.jpg": "/static/media/website-design-4.affc1d207f984aaca727.jpg",
     "static/media/webite-design-1.jpg": "/static/media/webite-design-1.30fade5b578bb7866264.jpg",
@@ -44,12 +42,12 @@
     "static/media/logo-design.png": "/static/media/logo-design.83a3315c624890a005b6.png",
     "static/media/Screenshot_1.jpg": "/static/media/Screenshot_1.eee9a1494f3fc8b48ab3.jpg",
     "index.html": "/index.html",
-    "main.c113b55f.css.map": "/static/css/main.c113b55f.css.map",
-    "main.a5202ff9.js.map": "/static/js/main.a5202ff9.js.map",
+    "main.9ed4b0e3.css.map": "/static/css/main.9ed4b0e3.css.map",
+    "main.81dd0f86.js.map": "/static/js/main.81dd0f86.js.map",
     "787.c09d15d4.chunk.js.map": "/static/js/787.c09d15d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c113b55f.css",
-    "static/js/main.a5202ff9.js"
+    "static/css/main.9ed4b0e3.css",
+    "static/js/main.81dd0f86.js"
   ]
 }
