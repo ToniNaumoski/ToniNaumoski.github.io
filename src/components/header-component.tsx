@@ -122,8 +122,7 @@ export default function HeaderComponent() {
             <header>
                 <section className="header-text-section">
                     <h1 className="header-name">Toni Naumoski</h1>
-                    <h2>Web Designer</h2>
-                    <h2 className="header-discription">Frontend UI Developer / UI Designer</h2>
+                    <h2 className="header-discription">Senior Frontend Developer</h2>
                 </section>
                 <section className="header-image-section">
                     <img className="header-image" src={require('./../img/toni-naumoski-image-header.png')} alt="header-image" />
